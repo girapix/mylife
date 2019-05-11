@@ -1,0 +1,78 @@
+.construction {
+    background: {
+        image: url('./../../assets/img/casamento.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: top center;
+    }
+    .construction-azul {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($preto, .7);
+        .construction-content {
+            @include vertical-center();
+            color: $branco;
+            text-align: center;
+            .brand {
+                width: 80%;
+                @include push--auto;
+                margin-bottom: 2rem;
+                @include mq('tablet-small') {
+                    width: 30%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .h1 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                @include mq('desktop') {
+                    font-size: 4rem;
+                }
+            }
+            .h2 {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                @include mq('desktop') {
+                    font-size: 2rem;
+                }
+                .girapix {
+                    color: #FBBA00;
+                    &:hover {
+                        color: #A48213;
+                    }
+                }
+            }
+            .btn-banner {
+                background-color: $rosa;
+                &:hover {
+                    background-color: $azul;
+                    color: $branco;
+                }
+                .iconify {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .footer {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            bottom: 0;
+            margin-bottom: 20px;
+            @include mq('desktop') {
+                margin-bottom: 10px;
+            }
+            .container {
+                text-align: center;
+                img {
+                    width: 70px;
+                    @include mq('desktop') {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
